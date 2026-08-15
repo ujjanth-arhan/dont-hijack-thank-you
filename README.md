@@ -152,3 +152,8 @@ Open `tests/test-runner.html` in a Chromium browser to run the dependency-free
 behavior tests. The page reports each check as `PASS` or `FAIL`.
 
 </details>
+
+## Acknowledgments
+
+GitHub Copilot was used extensively throughout the design, implementation,
+testing, and documentation of this project.
