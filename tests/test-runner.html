@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Don't Hijack, Thank You tests</title>
+  </head>
+  <body data-status="running">
+    <pre id="results"></pre>
+    <script>
+      window.chrome = {
+        runtime: { lastError: null },
+        storage: {
+          local: {
+            data: {
+              siteSettings: {},
+              allowlistedOrigins: [],
+              disabledOrigins: []
+            },
+            get(defaults, callback) {
+              callback({ ...defaults, ...this.data });
+            },
+            set(values, callback) {
+              Object.assign(this.data, values);
+              callback();
+            }
+          },
+          onChanged: {
+            addListener() {}
+          }
+        }
+      };
+    </script>
+    <script src="../feature-config.js"></script>
+    <script src="../settings-model.js"></script>
+    <script src="test-runner.js"></script>
+  </body>
+</html>

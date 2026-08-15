@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+web-ext-artifacts/
+
+# Packaged extensions and signing keys
+*.crx
+*.pem
+*.zip
+
+# Logs
+*.log
