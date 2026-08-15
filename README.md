@@ -40,21 +40,17 @@ remote-desktop application.
 
 ### Install from a browser store
 
-Install the published extension from your browser's extension store:
+The extension has not been published to a browser store yet.
 
-| Browser | Installation location |
+| Browser | Availability |
 | --- | --- |
-| Chrome | Chrome Web Store — `{{CHROME_WEB_STORE_URL}}` |
-| Brave | Chrome Web Store — `{{CHROME_WEB_STORE_URL}}` |
-| Edge | Microsoft Edge Add-ons — `{{EDGE_ADDONS_URL}}` |
-| Other Chromium browsers | Use the Chrome Web Store when supported. |
+| Chrome | Not yet available in the Chrome Web Store |
+| Brave | Not yet available in the Chrome Web Store |
+| Edge | Not yet available in Microsoft Edge Add-ons |
 
-After installation, open the browser's Extensions menu and pin **Don't Hijack,
-Thank You** for quick access.
-
-> **Publisher note:** Replace every `{{...}}` value before announcing a
-> published release. The current package targets Chromium browsers. Firefox is
-> not currently packaged or tested as a supported release.
+Until a store release is available, use the source installation steps below.
+The current package targets Chromium browsers. Firefox is not currently
+packaged or tested as a supported release.
 
 ### Install from source
 
@@ -62,8 +58,10 @@ Use an unpacked installation when developing the extension or testing the
 source before it is published.
 
 1. Get the source:
-   - Repository: `{{GITHUB_REPOSITORY_URL}}`
-   - Release archive: `{{GITHUB_RELEASES_URL}}`
+   - Repository:
+     <https://github.com/ujjanth-arhan/dont-hijack-thank-you>
+   - Release archive:
+     <https://github.com/ujjanth-arhan/dont-hijack-thank-you/releases>
    - Or select **Code → Download ZIP** from the repository.
 2. Extract the downloaded ZIP if necessary.
 3. Open the extensions page for your browser:
@@ -77,6 +75,8 @@ source before it is published.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the project folder containing `manifest.json`.
+7. Optionally pin **Don't Hijack, Thank You** from the browser's Extensions
+   menu.
 
 Unpacked extensions do not update automatically. Reload the extension after
 changing its files.
