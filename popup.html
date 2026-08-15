@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Don't Hijack, Thank You</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+          <span class="logo" aria-hidden="true">
+            <img src="icons/icon-32.png" alt="">
+          </span>
+          <span>
+            <h1>Don't Hijack, Thank You</h1>
+            <p>Keep right-click and copy behavior under your control</p>
+          </span>
+      </header>
+
+      <section class="site-card" aria-live="polite">
+          <span id="status-indicator" class="status-indicator"></span>
+          <span class="site-details">
+            <strong id="status">Checking protection...</strong>
+            <small id="site">Checking this page...</small>
+          </span>
+      </section>
+
+      <button id="allowlist-toggle" class="allowlist-toggle" type="button" disabled>
+          Turn off all protections for this site
+      </button>
+
+      <fieldset id="features" class="features" disabled>
+          <legend>Protections for this site</legend>
+          <div id="current-features"></div>
+      </fieldset>
+
+      <section class="site-rules-section">
+          <h2>Sites with custom settings</h2>
+          <p id="site-rules-empty" class="site-rules-empty">
+            No other sites have custom settings yet.
+          </p>
+          <div id="site-rules" class="site-rules"></div>
+      </section>
+
+      <p id="message" class="message" role="status"></p>
+
+      <footer>
+          Changes are saved automatically
+      </footer>
+    </main>
+    <script src="feature-config.js"></script>
+    <script src="settings-model.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
